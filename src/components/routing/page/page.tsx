@@ -35,7 +35,7 @@ export function Page(props: Props) {
             <Helmet
               titleTemplate={`%s | ${siteTitle}`}
               htmlAttributes={{
-                lang: "pt-BR",
+                lang: "pt-PT",
               }}
               title={props.title}
               meta={[
@@ -72,8 +72,7 @@ export function Page(props: Props) {
 
             <footer className={`bg-dark text-white w-100 py-4`}>
               <p className={`text-center`}>
-                Copyright © {new Date().getFullYear()},{` `}Eliseu e Cecilia -
-                Representações Comerciais
+                Copyright © {new Date().getFullYear()},{` `}Daniela Santos
               </p>
               <p className={`text-center`}>Teste</p>
             </footer>

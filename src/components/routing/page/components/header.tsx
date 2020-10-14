@@ -1,11 +1,11 @@
 import React from "react"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
+import { GAME_ROUTE } from "src/components/templates/game/game-routes"
 import { INDEX_ROUTE } from "src/components/templates/index/index-routes"
 import { makeAccessibleButtonProps } from "src/components/ui-kit/core/accessibility/make-accessible-button-props"
 import { throwError } from "src/logic/app-internals/utils/throw-error"
 import { v4 as uuidV4 } from "uuid"
-// import styles from './header.module.scss'
 
 type Props = {}
 
@@ -112,6 +112,7 @@ export class Header extends React.Component<Props, State> {
             <Navbar.Collapse id={this.state.domId}>
               <Nav className="container px-0 mr-auto">
                 <Nav.Link href={INDEX_ROUTE.getHref()}>Home</Nav.Link>
+                <Nav.Link href={GAME_ROUTE.getHref()}>Game</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
