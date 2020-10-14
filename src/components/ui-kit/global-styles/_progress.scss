@@ -1,0 +1,34 @@
+@import "node_modules/bootstrap/scss/progress";
+
+.progress-bar {
+  @include box-shadow($progress-box-shadow);
+
+  @if (is-color-dark($progress-bar-bg)) {
+    font-weight: $font-weight-bold;
+  }
+}
+
+@each $color,
+  $value
+    in map-merge(
+      (
+        "white": $white,
+      ),
+      $theme-colors
+    )
+{
+  .progress-bar.bg-#{$color} {
+    color: color-yiq($value);
+    @if (is-color-dark($value)) {
+      font-weight: $font-weight-bold;
+
+      &.progress-bar-striped {
+        @include gradient-striped(rgba($white, 0.3));
+      }
+    } @else {
+      &.progress-bar-striped {
+        @include gradient-striped(rgba($primary, 0.1));
+      }
+    }
+  }
+}

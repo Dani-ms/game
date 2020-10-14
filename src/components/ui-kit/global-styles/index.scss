@@ -1,0 +1,31 @@
+// -----
+// -----
+// -----
+// README: check the README file in the project root before changing any of these global styles.
+// -----
+// -----
+// -----
+
+@import "src/components/ui-kit/global-styles/variables";
+
+@import "src/components/ui-kit/global-styles/mixins";
+@import "src/components/ui-kit/global-styles/reboot";
+@import "src/components/ui-kit/global-styles/type";
+@import "node_modules/bootstrap/scss/images";
+@import "src/components/ui-kit/global-styles/grid";
+@import "src/components/ui-kit/global-styles/additional-modifiers/grid-modifiers";
+@import "src/components/ui-kit/global-styles/dropdown";
+@import "src/components/ui-kit/global-styles/buttons";
+@import "src/components/ui-kit/global-styles/button-group";
+@import "node_modules/bootstrap/scss/card";
+@import "src/components/ui-kit/global-styles/carousel";
+@import "src/components/ui-kit/global-styles/nav";
+@import "src/components/ui-kit/global-styles/navbar";
+@import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/spinners";
+@import "node_modules/bootstrap/scss/utilities";
+@import "src/components/ui-kit/global-styles/additional-components/cover/cover";
+@import "src/components/ui-kit/global-styles/additional-utilities/text-shadows-utilities";
+@import "src/components/ui-kit/global-styles/additional-utilities/stripes-utilities";
+@import "src/components/ui-kit/global-styles/additional-modifiers/spinners-modifiers";

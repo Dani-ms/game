@@ -1,0 +1,30 @@
+@import "node_modules/bootstrap/scss/navbar";
+
+.navbar {
+  .navbar-nav {
+    font-weight: $font-weight-bold;
+    font-size: 1.25rem;
+
+    .dropdown-item {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+
+    .nav-link {
+      @extend .text-shadow-sm;
+    }
+  }
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  $next: breakpoint-next($breakpoint, $grid-breakpoints);
+  $infix: breakpoint-infix($next, $grid-breakpoints);
+
+  .navbar-expand#{$infix} {
+    @include media-breakpoint-down($breakpoint) {
+      .nav-item.dropdown {
+        width: 100%;
+      }
+    }
+  }
+}

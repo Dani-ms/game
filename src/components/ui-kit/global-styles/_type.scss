@@ -1,0 +1,14 @@
+@import "node_modules/bootstrap/scss/type";
+
+.display-1 {
+  @extend .text-shadow;
+}
+.display-2 {
+  @extend .text-shadow-sm;
+}
+.display-3 {
+  @extend .text-shadow-sm;
+}
+.display-4 {
+  @extend .text-shadow-sm;
+}

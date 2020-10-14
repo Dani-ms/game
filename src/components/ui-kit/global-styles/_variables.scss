@@ -1,0 +1,79 @@
+$enable-shadows: true;
+$enable-transitions: true;
+
+$white: #ffffff;
+$gray-900: #212529;
+$black: #000;
+
+$primary: #d50000;
+
+$body-color: $gray-900;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 2,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 6,
+  8: $spacer * 8,
+);
+
+$grid-gutter-width: $spacer;
+
+$font-1: "Source Sans Pro", sans-serif;
+
+$font-size-base: 1rem;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 400;
+$font-weight-normal: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: bolder;
+
+$font-family-sans-serif: $font-1;
+$font-family-base: $font-family-sans-serif;
+$headings-font-family: $font-1;
+$headings-font-weight: $font-weight-bold;
+$headings-margin-bottom: $spacer;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$display1-size: $h1-font-size;
+$display2-size: $h2-font-size;
+$display3-size: $h3-font-size;
+$display4-size: $h4-font-size;
+$display1-weight: $font-weight-bold;
+$display2-weight: $font-weight-bold;
+$display3-weight: $font-weight-bold;
+$display4-weight: $font-weight-bold;
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $white;
+$navbar-dark-active-color: $white;
+$navbar-dark-toggler-border-color: $white;
+
+$navbar-light-color: $gray-900;
+$navbar-light-hover-color: $gray-900;
+$navbar-light-active-color: $gray-900;
+$navbar-light-toggler-border-color: $gray-900;
+
+$progress-height: 1.5rem;
+$progress-font-size: 1rem;
+
+$carousel-control-color: $black;
+$carousel-control-opacity: 1;
+
+$stripe-width-lg: 0.5rem;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "src/components/ui-kit/global-styles/additional-functions/color-functions";
+@import "node_modules/bootstrap/scss/variables";

@@ -1,0 +1,28 @@
+@import "variables";
+
+.home-page {
+  .home-page__hero-section {
+    height: 90vh;
+  }
+
+  .item-home-img {
+    width: 400px;
+    height: 100%;
+    padding-bottom: 50px;
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+  .item-home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+}
