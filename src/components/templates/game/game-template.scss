@@ -23,8 +23,7 @@
   grid-template-columns: repeat(3, 240px);
   grid-template-rows: repeat(3, 200px);
   gap: 1rem;
-  border: 1px solid $gray-900;
-  background-color: $gray-500;
+  background-color: rgba(226, 222, 222, 0.603);
 }
 
 .board-container.game-over {
